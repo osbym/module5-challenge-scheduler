@@ -38,7 +38,7 @@ var dp = new DayPilot.Calendar("dp", {
                 text: modal.result
             }));
         });
-    }
+    },
 onBeforeCellRender: function(args) {
     if (args.cell.start < DayPilot.Date.today()) {
         args.cell.disbanded = true;
