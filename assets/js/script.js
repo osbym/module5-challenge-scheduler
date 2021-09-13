@@ -39,3 +39,22 @@ $(":text").each(function() {
     console.log(id + ': ', agenda[id]);
     $(this).val(agenda[id]);
 });
+
+// Color code events: past, present, future
+var currentTime = moment().format('h a');
+$(".time-item").each(function() {
+    // find all of the time-item elements
+    // loop through each time-item to get h4
+    // use moment.js to convert selected time
+
+    const timeName = $(this).closest('.row');
+    // this looks with the row class the next input box
+    var input = row.find('input[type=text]');
+    if(inputTime < currentTime){
+        input.css("background-color", "lightgrey")
+    }
+    else if (inputTime > currentTime) {
+        input.css("background-color", "#81d64f")
+    }else {input.css("background-color", "#ed5a5a")}
+
+});
