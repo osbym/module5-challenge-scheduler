@@ -17,7 +17,7 @@ Create a simple calendar application that allows a user to save events for each 
 
 ## Website
 
-((INSERT LINK FOR WEBSITE))
+https://osbym.github.io/module5-challenge-scheduler/ 
 
 
 ## User Story
@@ -60,4 +60,5 @@ THEN the saved events persist
 
 ## Mock Up
 
-((INSERT IMAGE FOR MOCK-UP))
+![image](https://user-images.githubusercontent.com/87884472/133031769-5fbb0eca-38f3-4225-b793-d33c9d0a067b.png)
+
