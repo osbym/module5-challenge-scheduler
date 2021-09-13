@@ -61,6 +61,14 @@ body {
       height: 100%;
   }
 
+  .agenda {
+      width: 100%;
+      display: flex;
+      height: 100%;
+      margin: 20px;
+      padding: 3px;
+  }
+
   .agenda-item {
       width: 100%;
       height: 100%;
@@ -107,22 +115,89 @@ body {
     color: white;
   }
 
+  .save {
+      align-content: center;
+      margin: 5px;
+  }
+
   .saveBtn {
       align-content: center;
       margin: 3px;
       background: #2cc9c9;
   }
-  
-  .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06AED5;
-    color: white;
+
+  .saveBtn:hover {
+      font-size: 20px;
+      transition: all .3s ease-in-out;
+      background: #179c3d;
   }
   
-  .saveBtn i:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
+
+  /* MEDIA QUERY FOR SMALL DESKTOP SCREENS AND SMALLER */
+
+  @media screen and (max-width: 980px) {
   }
+
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+      footer {
+          width: 100%;
+      }
+  }
+
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+      body {
+          width: 100%;
+          height: auto;
+      }
+
+      footer {
+          width: 100%;
+
+      }
+
+      .jumbotron {
+          padding-bottom: 10px;
+          padding-top: 10px;
+      }
+
+      .container {
+          height: 100%;
+          width: 100%;
+          padding-left: 2px;
+          padding-right: 2px;
+      }
+
+      .agenda-item {
+          width: 230px;
+          font-size: 10px;
+      }
+
+      .time-item {
+          width: 20%;
+          display: grid;
+      }
+
+      .time-item h4 {
+          font-size: 12px;
+
+      }
+
+      .row {
+          width: 100%;
+          margin-left: 0px;
+          margin-right: 0px;
+          display: -webkit-inline-box;
+      }
+
+      .save {
+          padding-right: 0px;
+          padding-left: 0px;
+          width: 20%;
+          height: 75px;
+          display: grid;
+      }
+  }
+  
   
