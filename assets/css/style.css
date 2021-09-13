@@ -22,14 +22,14 @@ body {
       width: 100%;
       font-size: 18px;
       color: white;
-      background-color: #560296;
+      background-color: #026c96;
       padding: 15px;
       margin-top: 20px;
   }
 
   header p {
       font-size: 20px;
-      color: #560296;
+      color: #c50b0b;
   }
 
   h4 {
@@ -47,7 +47,7 @@ body {
 
   .container {
       border-radius: 10px;
-      border: #560296 solid;
+      border: #026c96 solid;
       height: 100%;
       width: 100%;
   }

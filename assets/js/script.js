@@ -16,7 +16,7 @@ weekdays[6] = "Saturday";
 
 var weekday = today.getDay();
 
-$('#currentDay').text("Today is: " + weekdays[weekday] + " " + todayOutput);
+$('#currentDay').text("Today is: " + weekdays[weekday] + " " +  todayOutput);
 
 // Get Input text with the save button
 var agenda = JSON.parse(localStorage.getItem("agenda")) || {};
@@ -47,7 +47,11 @@ $(".time-item").each(function() {
     // loop through each time-item to get h4
     // use moment.js to convert selected time
 
-    const timeName = $(this).closest('.row');
+    const timeName = $(this).find('h4');
+    var timeItem = timeName.text();
+    var inputTime = moment(timeItem, "h:mm a").format('h a');
+
+    var row = $(this).closest('.row');
     // this looks with the row class the next input box
     var input = row.find('input[type=text]');
     if(inputTime < currentTime){
